@@ -26,8 +26,7 @@
 | Binance      | ![Working](https://img.shields.io/badge/status-working-brightgreen)                         |
 
 ### 🔜 Upcoming Releases (Soon-to-be Free)
-- **Dropbox**
-
+N/A
 ---
 
 ### 💼 Available for Purchase
